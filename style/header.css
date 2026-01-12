@@ -1,0 +1,38 @@
+header {
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(26, 26, 26);
+    font-size: 18px;
+}
+
+header > nav > ul, header > nav {
+    display: flex;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+}
+
+header > nav {
+    justify-content: space-between;
+}
+
+
+header > nav > ul{
+    padding: 15px;
+    gap:25px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+    transition: .5s;
+}
+
+a:hover{
+    color:#666;
+}
+
+
+
+

@@ -46,13 +46,28 @@
     line-height: 1.75rem;
 }
 
+#side-menu{
+    border-radius: 25px;
+    width: 150px;
+    height:400px;
+}
 
 #side-tag-container{
     display: flex;
+    flex-flow: column;
     align-items: center;
     gap:10px;
 }
 
+#side-tag-container > p {
+    font-style: italic;
+    font-weight: 500;
+    font-size:16px;
+}
+
 #side-tag{
+    background-color: black;
+    color: white;
+    width: 100%;
     padding: 10px;
 }

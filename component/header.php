@@ -22,10 +22,14 @@ include_once("./data/data.php");
 <body>
     <header>
         <nav>
-            <a href="/">Logo</a>
+            <div id="logo-container">
+                <a href="/">The mind</a>
+                <a href="/">
+                    <img id="logo" src="../img/logo.png" alt="Logo">
+                </a>
+            </div>
             <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Mais</a></li>
+                <li><a href="/about.php">Sobre</a></li>
             </ul>
         </nav>
     </header>

@@ -1,14 +1,14 @@
-<?php 
+<?php
 
-    include_once("./data/data.php");
+include_once("./data/data.php");
 
-    $randomPost = rand(1, 4);
+$randomPost = rand(1, 4);
 
-    foreach ($topics as $topic) {
-        if ($topic['id'] === $randomPost) {
-            $randomPost = $topic;
-        }
+foreach ($topics as $topic) {
+    if ($topic['id'] === $randomPost) {
+        $randomPost = $topic;
     }
+}
 
 ?>
 
@@ -46,14 +46,13 @@
         </div>
     </div>
     <aside id="side-menu">
-        <div>
+        <div id="side-tag-container">
             <p>Tags:</p>
             <? foreach ($randomPost['tags'] as $tag): ?>
-                <div>
+                <div id="side-tag">
                     <p><?= $tag ?></p>
                 </div>
             <? endforeach; ?>
         </div>
     </aside>
 </div>
-

@@ -20,5 +20,5 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("theme", newTheme);
 
   imgButton.src =
-    newTheme === "light" ? "../img/daytime.svg" : "../img/bedtime.svg";
+    newTheme === "light" ? "../img/bedtime.svg" : "../img/daytime.svg";
 });

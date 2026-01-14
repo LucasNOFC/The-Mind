@@ -1,3 +1,8 @@
+:root {
+  --tag-bg: #272727;
+  --tag-color: #e2e2e2;
+}
+
 #post-container{
     margin: 0 auto;
     width: 100%;
@@ -71,8 +76,14 @@
 }
 
 #side-tag{
-    background-color: black;
-    color: white;
+    background-color: var(--tag-bg);
+    color: var(--tag-color);
     width: 100%;
     padding: 10px;
 }
+
+[data-theme="dark"] {
+--tag-bg: #e2e2e2;
+  --tag-color:#272727;
+}
+

@@ -28,6 +28,10 @@ include_once("./data/data.php");
                     <img id="logo" src="../img/logo.png" alt="Logo">
                 </a>
             </div>
+            <form method="GET" action="/topic.php/">
+                <input id="search-input" type="text" name="search">
+                <input id="submit-input" type="submit" value="Search">
+            </form>
             <ul>
                 <li><a href="/about.php">Sobre</a></li>
                 <li><button id="button-theme-handler"><img src="" alt="button logo" id="img-button"></button></li>

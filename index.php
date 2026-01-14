@@ -18,7 +18,7 @@ include_once("./component/header.php");
                 </div>
                 <article id="post-article">
                     <?php
-                    include_once("./component/post.php");
+                    include_once("./component/randomPost.php");
                     ?>
                 </article>
             </section>

@@ -1,4 +1,4 @@
-# 🧠 The Mind — Blog sobre Mente e Sociedade
+# The Mind — Blog sobre Mente e Sociedade
 
 **The Mind** é um blog desenvolvido com foco no estudo da mente humana e sua interação com a sociedade. O projeto utiliza tecnologias web clássicas — **PHP, HTML5, CSS3 e JavaScript** — com o objetivo de explorar tanto conceitos psicológicos quanto fundamentos práticos de desenvolvimento web.
 
@@ -6,7 +6,7 @@ Trata-se de uma aplicação de caráter **didático, conceitual e experimental**
 
 ---
 
-## 📚 Sobre o Projeto
+## Sobre o Projeto
 
 O blog tem como propósito abordar e comunicar reflexões relacionadas à mente humana, considerando sua influência e relação com o meio social.
 
@@ -21,7 +21,7 @@ O conteúdo busca unir **pensamento crítico**, **observação social** e **expr
 
 ---
 
-## ⚙️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **PHP** — processamento backend e controle de requisições  
 - **HTML5** — estrutura semântica  
@@ -30,7 +30,7 @@ O conteúdo busca unir **pensamento crítico**, **observação social** e **expr
 
 ---
 
-## 🏗️ Arquitetura da Aplicação
+## Arquitetura da Aplicação
 
 A aplicação segue uma **arquitetura MVC simplificada (Model–View–Controller)**, adequada para projetos educacionais e demonstrações conceituais.
 
@@ -58,3 +58,6 @@ Antes de iniciar, certifique-se de ter instalado em sua máquina:
 1. Clone o repositório:
    ```bash
    git clone https://github.com/LucasNOFC/The-Mind
+   cd The-Mind
+   php -S localhost:8000
+   http://localhost:8000

@@ -42,7 +42,7 @@ Essa estrutura permite:
 
 ---
 
-## 🚀 Como Executar o Projeto Localmente
+## Como Executar o Projeto Localmente
 
 ### Pré-requisitos
 
@@ -57,7 +57,9 @@ Antes de iniciar, certifique-se de ter instalado em sua máquina:
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/LucasNOFC/The-Mind
-   cd The-Mind
-   php -S localhost:8000
-   http://localhost:8000
+   1. git clone https://github.com/LucasNOFC/The-Mind
+   2. cd The-Mind
+   3. php -S localhost:8000
+   4. http://localhost:8000
+
+Pronto. A aplicação estará rodando localmente.

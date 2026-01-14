@@ -46,3 +46,10 @@ a:hover{
 }
 
 
+button{
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+    transition: .5s;
+}
+

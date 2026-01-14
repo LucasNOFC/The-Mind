@@ -12,7 +12,7 @@ foreach ($topics as $topic) {
 
 ?>
 
-<div id="post-container">
+<main id="post-container">
     <div id="post-topics">
         <div id="post-apresentation">
             <h1 id="post-title"><?= $randomPost['title'] ?></h1>
@@ -55,4 +55,4 @@ foreach ($topics as $topic) {
             <? endforeach; ?>
         </div>
     </aside>
-</div>
+</main>

@@ -5,6 +5,16 @@
     font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
+[data-theme="dark"] {
+    --bg: #121212;
+    --text: #fff;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
 html {
     min-height: 100vh;
     position: relative;
@@ -16,6 +26,11 @@ main{
     padding: 30px;
     margin-bottom: 200px;
 }   
+
+.main-dark{
+    background-color: rgb(13, 12, 17);
+    color:rgb(156, 156, 156);
+}
 
 main >  div {
     padding-bottom: 10px;

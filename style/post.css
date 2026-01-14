@@ -11,6 +11,11 @@
     padding: 20px;
 }
 
+.dark-theme{
+    color:rgb(197, 197, 197);
+}
+
+
 #post-topics{
     display: flex;
     flex-flow: column wrap;

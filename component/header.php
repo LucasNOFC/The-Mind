@@ -30,6 +30,7 @@ include_once("./data/data.php");
             </div>
             <ul>
                 <li><a href="/about.php">Sobre</a></li>
+                <li><button id="button-theme-handler"><img src="" alt="button logo" id="img-button"></button></li>
             </ul>
         </nav>
     </header>

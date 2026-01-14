@@ -16,7 +16,7 @@ if (isset($_GET['id'])) {
 ?>
 
 
-<div id="post-container">
+<main id="post-container">
     <div id="post-topics">
         <div id="post-apresentation">
             <h1 id="post-title"><?= $actualTopic['title'] ?></h1>
@@ -59,7 +59,7 @@ if (isset($_GET['id'])) {
             <? endforeach; ?>
         </div>
     </aside>
-</div>
+</main>
 
 <?php
 include_once("./component/footer.php");

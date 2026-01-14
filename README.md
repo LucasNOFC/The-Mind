@@ -13,7 +13,7 @@ Para rodar a aplicação localmente:
   Após a instalação de ambas aplicações e configurações simples, seguir com as instruções abaixo:
   Abra o terminal (CMD) ou (GIT BASH) e utilize os seguintes comandos:
  
- - `git clone [https://github.com/](https://github.com/LucasNOFC/The-Mind)`
+ - `git clone https://github.com/LucasNOFC/The-Mind`
  - `cd The-Mind`
  - `php -S localhost:8000`
  - Acessar onde a aplicação está rodando no [navegador](http://localhost:8000)

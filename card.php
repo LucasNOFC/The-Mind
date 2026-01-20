@@ -6,22 +6,15 @@ include_once __DIR__ . "/../data/data.php";
 <?php if (!isset($_GET['search'])): ?>
     <?php foreach ($topics as $topic): ?>
         <div id="card">
-            <div id="card-handler-options">
-                <a href="<?= BASE_URL ?>/edit.php/?id=<?= $topic['id'] ?>">
-                    <img class="post-handler" src="<?= BASE_URL ?>/public/img/edit2.svg" alt="editar a publicação">
-                </a>
-                <a href="<?= BASE_URL ?>/component/delete.php/?id=<?= $topic['id'] ?>">
-                    <img class="post-handler" src="<?= BASE_URL ?>/public/img/delete2.svg" alt="deletar a publicação">
-                </a>
-            </div>
-            <div id="card-info-list">
-                <img id="card-img" src="data:image/jpeg;base64,<?= base64_encode($topic['imagePost']) ?>" alt="<?= $topic['descriptiontext'] ?>">
-                <a id="card-title" href="<?= BASE_URL ?>/topic.php/?id=<?= $topic['id'] ?>"><?= $topic['title'] ?></a>
-                <p id="card-description"><?= $topic['descriptiontext'] ?></p>
-            </div>
+            <img id="card-img" src="<?= BASE_URL ?>/public/img/<?= $topic['img'] ?>" alt="<?= $topic['description'] ?>">
+            <a id="card-title" href="<?= BASE_URL ?>/topic.php/?id=<?= $topic['id'] ?>"><?= $topic['title'] ?></a>
+            <p id="card-description"><?= $topic['description'] ?></p>
+
             <div id="card-tag-list">
                 <p>Tags:</p>
-                <p><?= $topic['tags'] ?></p>
+                <?php foreach ($topic['tags'] as $tag): ?>
+                    <p><?= $tag ?></p>
+                <?php endforeach; ?>
             </div>
         </div>
     <?php endforeach; ?>
@@ -48,7 +41,7 @@ include_once __DIR__ . "/../data/data.php";
                     <article id="card-article">
                         <?php foreach ($cards as $card): ?>
                             <div id="card">
-                                <img id="card-img" src="data:image/jpeg;base64,<?= base64_encode($topicDB['imagePost']) ?>" alt="<?= $topicDB['descriptiontext'] ?>">
+                                <img id="card-img" src="<?= BASE_URL ?>/public/img/<?= $card['img'] ?>" alt="<?= $card['description'] ?>">
                                 <a id="card-title" href="<?= BASE_URL ?>/topic.php/?id=<?= $card['id'] ?>"><?= $card['title'] ?></a>
                                 <p id="card-description"><?= $card['description'] ?></p>
                                 <div id="card-tag-list">
@@ -63,10 +56,11 @@ include_once __DIR__ . "/../data/data.php";
                 </section>
             </div>
         </main>
-    <?php else: ?>
-        <?
 
-        include_once __DIR__ . "./404.php";
+    <?php else: ?>
+        <? 
+
+            include_once __DIR__ . "./404.php";        
 
         ?>
 

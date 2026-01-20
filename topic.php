@@ -1,11 +1,11 @@
 <?php
-include_once("./component/header.php");
+include_once __DIR__ . "/component/header.php";
 ?>
 
 <?php
 
-$post = null;
 
+$post = null;
 
 
 if (isset($_GET['id'])) {
@@ -14,29 +14,33 @@ if (isset($_GET['id'])) {
     foreach ($topics as $topic) {
         if ($topic['id'] == $actualTopic) {
             $post = $topic;
+            $tags = explode(",", $post['tags']);
         }
     }
 } else if (isset($_GET['search'])) {
     $actualTopic = $_GET['search'];
-
     foreach ($topics as $topic) {
+
         if ($topic['title'] == $actualTopic) {
             $post = $topic;
+            $tags = explode(",", $post['tags']);
         }
     }
 }
 ?>
 
-<? if ($post): ?>
+
+
+<?php if ($post): ?>
 
     <main id="post-container">
         <div id="post-topics">
             <div id="post-apresentation">
                 <h1 id="post-title"><?= $post['title'] ?></h1>
-                <h3 id="post-description"><?= $post['description'] ?></h3>
+                <h3 id="post-descriptiontext"><?= $post['descriptiontext'] ?></h3>
             </div>
             <div id="post-image-container">
-                <img id="post-img" src="/img/<?= $post['img'] ?>" alt="<?= $post['description'] ?>">
+                <img id="post-img" src="data:image/jpeg;base64,<?= base64_encode($post['imagePost']) ?>" alt="<?= $post['descriptiontext'] ?>">
             </div>
             <div id="post-text-container">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi recusandae velit voluptates optio. Minima eveniet nesciunt beatae esse quisquam aut, dignissimos cum! Repellendus at deleniti consectetur, magnam sapiente distinctio nihil?
@@ -65,25 +69,25 @@ if (isset($_GET['id'])) {
         <aside id="side-menu">
             <div id="side-tag-container">
                 <p>Tags:</p>
-                <? foreach ($post['tags'] as $tag): ?>
+                <?php foreach ($tags as $tag): ?>
                     <div id="side-tag">
                         <p><?= $tag ?></p>
                     </div>
-                <? endforeach; ?>
+                <?php endforeach; ?>
             </div>
         </aside>
     </main>
 
-<? else: ?>
+<?php else: ?>
 
     <?php
 
-    include_once("./component/card.php");
+    include_once __DIR__ . "/404.php";
 
     ?>
 
-<? endif; ?>
+<?php endif; ?>
 
 <?php
-include_once("./component/footer.php");
+include_once __DIR__ . "/component/footer.php";
 ?>

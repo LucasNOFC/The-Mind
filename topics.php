@@ -1,13 +1,13 @@
 <?php
-include_once("./component/header.php");
+include_once __DIR__ . "/component/header.php";
 ?>
 
 <article id="card-article">
     <?php
-    include_once("./component/card.php");
+    include_once __DIR__ . "./component/card.php";
     ?>
 </article>
 
 <?php
-include_once("./component/footer.php");
+include_once __DIR__ . "/component/footer.php";
 ?>

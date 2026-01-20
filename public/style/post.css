@@ -1,0 +1,89 @@
+:root {
+  --tag-bg: #272727;
+  --tag-color: #e2e2e2;
+}
+
+#post-container{
+    margin: 0 auto;
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 250px;   
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#post-topics, #side-menu{
+    padding: 20px;
+}
+
+.dark-theme{
+    color:rgb(197, 197, 197);
+}
+
+
+#post-topics{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: left;
+    align-items: start;
+    gap:10px;
+}
+
+#post-title{
+    font-size:36px;
+}
+
+#post-description{
+    font-size:18px;
+    font-style: italic;
+    font-weight: 400;   
+    text-indent: 10px;
+}
+
+#post-img{
+    width: 600px
+}
+
+#post-text-container {
+    display: flex;
+    flex-flow: column wrap;
+    gap:10px;
+}
+
+#post-text-container > p{
+    text-align: justify;
+    font-size:15px;
+    line-height: 1.75rem;
+}
+
+#side-menu{
+    border-radius: 25px;
+    width: 150px;
+    height:400px;
+}
+
+#side-tag-container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap:10px;
+}
+
+#side-tag-container > p {
+    font-style: italic;
+    font-weight: 500;
+    font-size:16px;
+}
+
+#side-tag{
+    background-color: var(--tag-bg);
+    color: var(--tag-color);
+    width: 100%;
+    padding: 10px;
+}
+
+[data-theme="dark"] {
+--tag-bg: #e2e2e2;
+  --tag-color:#272727;
+}
+
